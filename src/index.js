@@ -11,11 +11,11 @@ import { FavoritesContextProvider } from "./store/favorites-context";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <Provider store={store}>
-  <FavoritesContextProvider>
-    <BrowserRouter>
+  <BrowserRouter basename="sample-meetup">
+    <FavoritesContextProvider>
       <App />
-    </BrowserRouter>
-  </FavoritesContextProvider>
+    </FavoritesContextProvider>
+  </BrowserRouter>
   // </Provider>
 );
 
